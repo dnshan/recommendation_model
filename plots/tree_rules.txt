@@ -1,0 +1,76 @@
+|--- percent_level_mastered <= 0.88
+|   |--- last_score <= 88.50
+|   |   |--- percent_level_mastered <= 0.58
+|   |   |   |--- last_score <= 83.50
+|   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |--- last_score >  83.50
+|   |   |   |   |--- last_score <= 84.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |   |--- last_score >  84.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |--- percent_level_mastered >  0.58
+|   |   |   |--- last_score <= 83.00
+|   |   |   |   |--- avg_last3 <= 80.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |   |--- avg_last3 >  80.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |--- last_score >  83.00
+|   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |--- last_score >  88.50
+|   |   |--- word_difficulty <= 2.50
+|   |   |   |--- current_level <= 1.50
+|   |   |   |   |--- avg_last3 <= 92.50
+|   |   |   |   |   |--- class: REVIEW_MASTERED
+|   |   |   |   |--- avg_last3 >  92.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |--- current_level >  1.50
+|   |   |   |   |--- last_score <= 95.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |   |--- last_score >  95.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |--- word_difficulty >  2.50
+|   |   |   |--- avg_last3 <= 84.83
+|   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |--- avg_last3 >  84.83
+|   |   |   |   |--- attempts <= 2.50
+|   |   |   |   |   |--- class: SAME_LEVEL_NEW
+|   |   |   |   |--- attempts >  2.50
+|   |   |   |   |   |--- class: REVIEW_MASTERED
+|--- percent_level_mastered >  0.88
+|   |--- current_level <= 2.50
+|   |   |--- attempts <= 2.50
+|   |   |   |--- attempts <= 1.50
+|   |   |   |   |--- avg_last3 <= 98.50
+|   |   |   |   |   |--- class: ADVANCE_LEVEL
+|   |   |   |   |--- avg_last3 >  98.50
+|   |   |   |   |   |--- class: ADVANCE_LEVEL
+|   |   |   |--- attempts >  1.50
+|   |   |   |   |--- current_level <= 1.50
+|   |   |   |   |   |--- class: ADVANCE_LEVEL
+|   |   |   |   |--- current_level >  1.50
+|   |   |   |   |   |--- class: ADVANCE_LEVEL
+|   |   |--- attempts >  2.50
+|   |   |   |--- avg_last3 <= 98.67
+|   |   |   |   |--- class: ADVANCE_LEVEL
+|   |   |   |--- avg_last3 >  98.67
+|   |   |   |   |--- current_level <= 1.50
+|   |   |   |   |   |--- class: REVIEW_MASTERED
+|   |   |   |   |--- current_level >  1.50
+|   |   |   |   |   |--- class: REVIEW_MASTERED
+|   |--- current_level >  2.50
+|   |   |--- avg_last3 <= 96.50
+|   |   |   |--- attempts <= 5.50
+|   |   |   |   |--- last_score <= 80.50
+|   |   |   |   |   |--- class: REVIEW_MASTERED
+|   |   |   |   |--- last_score >  80.50
+|   |   |   |   |   |--- class: COURSE_COMPLETE
+|   |   |   |--- attempts >  5.50
+|   |   |   |   |--- class: COURSE_COMPLETE
+|   |   |--- avg_last3 >  96.50
+|   |   |   |--- avg_last3 <= 97.17
+|   |   |   |   |--- class: COURSE_COMPLETE
+|   |   |   |--- avg_last3 >  97.17
+|   |   |   |   |--- attempts <= 7.50
+|   |   |   |   |   |--- class: COURSE_COMPLETE
+|   |   |   |   |--- attempts >  7.50
+|   |   |   |   |   |--- class: REVIEW_MASTERED

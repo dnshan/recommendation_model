@@ -1,0 +1,10 @@
+                 precision    recall  f1-score   support
+
+  ADVANCE_LEVEL       0.90      0.95      0.93        40
+COURSE_COMPLETE       0.82      1.00      0.90       129
+REVIEW_MASTERED       0.25      0.01      0.03        72
+ SAME_LEVEL_NEW       0.78      0.99      0.88       139
+
+       accuracy                           0.81       380
+      macro avg       0.69      0.74      0.68       380
+   weighted avg       0.71      0.81      0.73       380

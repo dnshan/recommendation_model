@@ -1,0 +1,8 @@
+pandas==2.3.3
+scikit-learn==1.8.0
+matplotlib>=3.7.0
+graphviz>=0.20.0
+fastapi>=0.95.0
+pydantic>=1.10.11
+uvicorn>=0.22.0
+joblib==1.5.3
