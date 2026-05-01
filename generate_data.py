@@ -8,7 +8,7 @@ def simulate_student_score(word, difficulty, student_ability):
     final_score = base_score + noise
     return max(0, min(100, final_score))
 
-def generate_dataset(num_sessions=500, steps_per_session=20, output_file='training_data.csv'):
+def generate_dataset(num_sessions=10000, steps_per_session=20, output_file='training_data.csv'):
     syllabus = {
     # Level 1 – very simple, common words
     'වතුර': 1,
