@@ -19,27 +19,17 @@ This system is adaptive, safe, and explainable, making it suitable for real-worl
 🎯 Key Objectives
 
 Personalize learning paths for each child
-
 Reduce frustration by adjusting difficulty dynamically
-
 Reinforce learning through repetition and review
-
 Ensure safe progression through predefined syllabus levels
-
 Provide clear reasons for every recommendation
-
 🧩 How It Works (Simple Flow)
 
 Child practices a word
-
 System assigns a score (0–100)
-
 Performance history is analyzed
-
 AI selects a learning strategy
-
 Rules select the safest next word
-
 Next word + reason is returned
 
 🧠 Core Idea: Hybrid AI System
@@ -55,13 +45,9 @@ Learns from student performance patterns
 Outputs actions like:
 
 REPEAT
-
 SWITCH_EASIER
-
 NEW_WORD
-
 ADVANCE_LEVEL
-
 REVIEW_MASTERED
 
 2️⃣ Rule-Based Engine
@@ -69,11 +55,8 @@ REVIEW_MASTERED
 Selects the exact word
 
 Enforces:
-
 Difficulty levels
-
 Syllabus boundaries
-
 Safety constraints
 
 ✅ This ensures adaptability without sacrificing control or explainability
@@ -91,34 +74,14 @@ Word: "වතුර" → Score: 88
 📊 Features Used for Decision Making
 
 Last pronunciation score
-
 Average of recent scores
-
 Consecutive failures
-
 Number of attempts
-
 Current learning level
-
 Percentage of mastered words
-
 Word difficulty level
 
-🚀 Key Features
 
-✅ Works from day one (no prior data required)
-
-✅ Personalized for each student
-
-✅ Prevents sudden difficulty jumps
-
-✅ Uses spaced repetition
-
-✅ Fully explainable decisions
-
-✅ Improves over time with real data
-
-✅ Child-safe and Montessori-aligned
 
 📂 Project Structure
 .
@@ -175,43 +138,14 @@ model.update_state([{'word': 'වතුර', 'score': 75}])
 next_step = model.predict_next_word('වතුර', 75)
 print(next_step)
 
-🔄 Training Your Own Model
+🔄 Training Model
 python generate_data.py
 python train_model.py
 
 
 This generates:
-
 Trained decision tree model
-
 Feature importance plot
-
 Confusion matrix
-
 Tree visualization
 
-🏫 Academic Use
-
-This project is suitable for:
-
-Final Year Projects
-
-AI in Education research
-
-Adaptive learning systems
-
-Explainable AI demonstrations
-
-🛡️ Design Principles
-
-Child-safe AI
-
-Explainable decisions
-
-Syllabus-controlled progression
-
-Pedagogy-first approach
-
-📜 License
-
-This project is intended for educational and research purposes.
